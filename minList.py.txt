@@ -1,0 +1,16 @@
+def find_min(lst):
+    if not lst:
+        return None
+
+    min_element = lst[0]
+    for item in lst:
+        if item < min_element:
+            min_element = item
+
+    return min_element
+
+# Example usage:
+if __name__ == "__main__":
+    my_list = [3, 8, 1, 5, 10, 4]
+    min_value = find_min(my_list)
+    print("The minimum value in the list is:", min_value)
